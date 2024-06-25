@@ -1,0 +1,30 @@
+import java.util.*;
+class Q2
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter person Weight in kg: ");
+double W = sc.nextDouble();
+System.out.println("Enter height of person in meter: ");
+double H = sc.nextDouble();
+double BMI = W/Math.pow(H,2);
+System.out.println("BMI: "+BMI);
+if(BMI<18.5)
+{
+System.out.println("The person is Underweight");
+}
+else if(BMI>=18.5 && BMI<=24.9)
+{
+System.out.println("The person is Normal Weight");
+}
+else if(BMI>=25 && BMI<=29.9)
+{
+System.out.println("The person is Overweight");
+}
+else
+{
+System.out.println("The person is Obese");
+}
+}
+}
