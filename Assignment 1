@@ -1,0 +1,20 @@
+Question no.1
+
+class Q1 {
+public static void main(String[] args) {
+int no = Integer.parseInt(args[0]);
+if(no>=2) {
+int count = 0;
+while(no>=2) {
+count++;
+no/=2;
+}
+System.out.println("The number of times one must repeatedly
+divide this number by 2 before getting a value less than 2 is "+count);
+}
+else
+{
+     System.out.println("Number is less than 2");
+  }
+ }
+} 
